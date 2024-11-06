@@ -42,16 +42,18 @@ Because Ubisoft Nadeo does not officially support Linux, we wrote a [Linux tutor
 
 ### Install TMRL:
 
-To install the `tmrl` python library, open your favorite terminal and run:
+To install locally `tmrl` after cloning the repository, cd into the `tmrl` folder and run:
 
 ```shell
-pip install tmrl
+uv sync --all-extras
+source .venv/bin/activate # to activate the virtual environment
+pip install .
 ```
 
-Then, validate the installation:
+Then, run the resource installation script:
 
 ```shell
-python -m tmrl --install
+python setup_resources_folder.py 
 ```
 
 #### Additional information for Windows / Trackmania 2020:
